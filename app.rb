@@ -9,6 +9,7 @@ require_relative './models/events_user'
 require_relative './models/events_users_feature'
 require_relative './config/environments'
 
+#request the index page
 get '/' do
   @users = User.all
   erb :index
